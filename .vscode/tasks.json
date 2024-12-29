@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar y Ejecutar P2 (Linux)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "javac -classpath P2/lib/jade.jar -d P2/bin P2/src/*.java && java -classpath P2/bin:P2/lib/jade.jar Main"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$javac"]
+    },
+    {
+      "label": "Compilar y Ejecutar P2 (Windows)",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "javac -classpath P2\\lib\\jade.jar -d P2\\bin P2\\src\\*.java && java -classpath P2\\bin;P2\\lib\\jade.jar Main"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": ["$javac"]
+    },
+    {
+      "label": "Compilar y Ejecutar P3 (Linux)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "javac -classpath P3/lib/jade.jar -d P3/bin P3/src/*.java && java -classpath P3/bin:P3/lib/jade.jar Main"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$javac"]
+    },
+    {
+      "label": "Compilar y Ejecutar P3 (Windows)",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "javac -classpath P3\\lib\\jade.jar -d P3\\bin P3\\src\\*.java && java -classpath P3\\bin;P3\\lib\\jade.jar Main"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": ["$javac"]
+    }
+  ]
+}
